@@ -50,7 +50,7 @@ const HomePage = () => {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="https://images.pexels.com/photos/2295285/pexels-photo-2295285.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    src="https://us.123rf.com/450wm/xelastia/xelastia2005/xelastia200500011/148014046-espaguetis-y-fettuccine-con-ingredientes-para-cocinar-pasta-en-una-mesa-de-hormig%C3%B3n-con-tablero-de.jpg?ver=6"
                     className="d-block w-100"
                     alt="..."
                   />
