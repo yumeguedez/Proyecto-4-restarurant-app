@@ -1,4 +1,4 @@
-const AboutPage = () => {
+const ProductsPage = () => {
   return (
     <>
       <main className="row">
@@ -10,4 +10,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProductsPage;
