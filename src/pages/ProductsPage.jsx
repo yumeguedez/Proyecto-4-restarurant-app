@@ -40,6 +40,9 @@ const ProductsPage = () => {
       ...producto.data(),
     }));
     setProductos(productos);
+
+    const autor = import.meta.env.VITE_NAME;
+    console.log(autor);
   };
 
   const crearProducto = async () => {
@@ -67,6 +70,11 @@ const ProductsPage = () => {
     <>
       <main className="row pt-5">
         <article className="col">
+          <h1 className="text-center">Italian's Food</h1>
+          <h4 className="text-sm-start">
+            El Verdadero Sabor de la Comida Italiana.
+          </h4>
+          <h2 className="text-center">Nuestros Productos</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
