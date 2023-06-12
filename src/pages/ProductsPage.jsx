@@ -71,10 +71,9 @@ const ProductsPage = () => {
       <main className="row pt-5">
         <article className="col">
           <h1 className="text-center">Italian's Food</h1>
-          <h4 className="text-sm-start">
-            El Verdadero Sabor de la Comida Italiana.
+          <h4 className="text-center">
+            El verdadero sabor de la comida Italiana.
           </h4>
-          <h2 className="text-center">Nuestros Productos</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
@@ -124,6 +123,7 @@ const ProductsPage = () => {
           </form>
         </article>
       </main>
+      <h1 className="text-center">Nuestros Productos</h1>
       <section className="row row-cols-1 row-cols-md-3 g-4 pt-5">
         {productos.map((producto) => (
           <article key={producto.id} className="col">

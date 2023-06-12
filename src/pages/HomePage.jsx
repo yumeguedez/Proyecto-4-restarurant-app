@@ -5,7 +5,7 @@ const HomePage = () => {
         <article className="col">
           <h1 className="text-center">Italian's Food</h1>
           <h4 className="text-sm-start">
-            El Verdadero Sabor de la Comida Italiana.
+            El verdadero sabor de la comida Italiana.
           </h4>
         </article>
         <section className="row">

@@ -3,7 +3,16 @@ const Footer = () => {
     <>
       <footer className="row">
         <article className="col">
-          <table className="table-footer gap-0 row-gap-3 text-center">
+          <table
+            className="table-footer gap-0 row-gap-3 text-center"
+            style={{
+              textAlign: "center",
+              maxWidth: "950px",
+              margin: "0 auto",
+              padding: "40px 25px",
+              marginTop: "50px",
+            }}
+          >
             <caption style={{ color: "gray" }}>
               Para mas información acerca de nuestras redes sociales
             </caption>

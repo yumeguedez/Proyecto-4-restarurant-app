@@ -65,40 +65,51 @@ const ReservaPage = () => {
         <article className="col">
           <h1 className="text-center">Italian's Food</h1>
           <h4 className="text-sm-start">
-            El Verdadero Sabor de la Comida Italiana.
+            El verdadero sabor de la comida Italiana.
           </h4>
-          <h2 className="text-center">Haz Tu Reserva</h2>
+          <h2 className="text-start">Solicita tu reserva</h2>
+          <p>
+            Si deseas reservar con nosotros, diligencie el siguiente formulario:
+          </p>
         </article>
-        <input
-          type="text"
-          placeholder="Nombre y Apellido"
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        />
-        <input
-          type="text"
-          placeholder="Correo Electronico"
-          onChange={(e) => {
-            setMail(e.target.value);
-          }}
-        />
-        <input
-          type="number"
-          placeholder="Telefono"
-          onChange={(e) => {
-            setPhone(e.target.value);
-          }}
-        />
-        <button onClick={createUser}>Enviar</button>
+        <section className="row">
+          <input
+            className="col"
+            type="text"
+            placeholder="Nombre y Apellido"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
+          <input
+            className="col"
+            type="text"
+            placeholder="Correo Electronico"
+            onChange={(e) => {
+              setMail(e.target.value);
+            }}
+          />
+          <input
+            className="col"
+            type="number"
+            placeholder="Telefono"
+            onChange={(e) => {
+              setPhone(e.target.value);
+            }}
+          />
+          <button className="col" onClick={createUser}>
+            Enviar
+          </button>
+          <h2 className="text-start">Reservas Listas</h2>
+        </section>
       </main>
 
       {users.map((item) => {
         return (
           <div key={item.id}>
-            <h1>Nombre: {item.nombre}</h1>
-            <h1>Correo: {item.correo}</h1>
-            <h1>Telefono: {item.telefono}</h1>
+            <h5>Nombre: {item.nombre}</h5>
+            <h5>Correo: {item.correo}</h5>
+            <h5>Telefono: {item.telefono}</h5>
             <button onClick={() => borrarUsuario(item.id)}>Borrar</button>
             <button onClick={() => formUpdateOpen(item)}>Editar</button>
           </div>
